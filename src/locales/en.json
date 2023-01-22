@@ -1,0 +1,26 @@
+{
+  HomeView: {
+    Hello: "We are looking forward to seeing you all at our wedding on the 7th of May 2023. We've put some information together for you about the day and locations to stay and vist around the venue, as well as how to get there. We hope you find this useful but please get in contact should you need any help or just have some questions that we can answer.",
+    Venue: "Venue",
+    VenueName: "Quinta dos Gafanhotos",
+    Address: "Rua Quinta dos Gafanhotos 173, 2775-734 Carcavelos, Portugal",
+    Map: "Map",
+    MapDescription: "Quinta dos Gafanhotos is located just outside of the west of Lisbon.",
+    MapOneDescription: "From Lisbon airport to the venue is approximately a 30 minute drive.",
+    MapTwoDescription: "The nearest train station is Carcavelos, which is an 8 minute drive from the station",
+    MapThreeDescription: "There is parking ample allocated parking for all wedding guest just in front of the main gate to Quinta dos Gafanhotos.",
+    Stay: "Places to Stay",
+    LisbonDescription: "The orange marked area on the map is the central area of Lisbon. You will find plenty of choices to stay, you will have downtown Lisbon and the main attractions. The train station Cais do Sodre (marked in blue), will take you straight to Carcavelos. The journey takes about 30 minutes. Cais do Sodre also has a tube station should want to stay further out of the centre. By car, from central Lisbon should take about 30 minutes.",
+    SintraDescription: "Sintra is a very beautiful place to stay, with lots of historical architecture and lush vegetation, characteristic of the area. It can be quite touristy during the day but it will be quiet at night. There are no good public transport links to the venue from here and so if you do stay in Sintra you will need a car or taxi to get to the venue. The journey should take just under 30 minutes.",
+    CascaisDescription: "Cascais is a charming seaside town. Here you will find plenty of accomodation to choose from. There will be lots of nice restaurants to explore and it will still be lively in the evenings. From here you can get a train to Carcavelos, which takes around 15 minutes. If driving or taking a taxi from Cascais to the venue this will take just under 20 minutes. All the area along the coast between Cascais and Carcavelos will also have good accomodation options to choose from.",
+    CarcavelosDescription: "Carcavelos is the closest area to the venue, it is more of a residential area but there are some accomodation options around, should you wish to stay closer to the venue. There is a beach nearby with some restaurants, cafes and also surf schools, should you be up to catching some waves.",
+    Transport: "How to get to the Venue",
+    Events: "Schedule of Events",
+    Lisbon: "Lisbon",
+    Sintra: "Sintra",
+    Cascais: "Cascais",
+    Drive: "Drive",
+    Train: "Train",
+    Taxi: "Taxi"
+  }
+}
