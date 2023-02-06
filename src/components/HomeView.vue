@@ -109,6 +109,7 @@
     </div>
     <div class="page-section">
       <h2 class="heading" v-text="$t('HomeView.Events')" />
+      <ScheduleOfEvents />
     </div>
   </div>
 </template>
@@ -118,12 +119,14 @@ import { mapGetters } from 'vuex'
 
 import SelectLanguage from '@/components/SelectLanguage.vue'
 import SwitchLanguage from '@/components/SwitchLanguage.vue'
+import ScheduleOfEvents from '@/components/ScheduleOfEvents.vue'
 
 export default {
   name: 'HomeView',
   components: {
     SelectLanguage,
-    SwitchLanguage
+    SwitchLanguage,
+    ScheduleOfEvents
   },
   computed: {
     ...mapGetters(['language']),
