@@ -20,7 +20,7 @@
     </div>
     <div class="page-section">
       <h2 class="heading" v-text="$t('HomeView.Map')" />
-      <p class="map-description" v-text="$t('HomeView.MapDescription')" />
+      <p class="important map-description-main" v-text="$t('HomeView.MapDescription')" />
       <picture class="image">
         <source
           srcset="@/assets/images/map-zoom-3.webp"
@@ -58,7 +58,7 @@
       </picture>
       <p class="map-description" v-text="$t('HomeView.MapThreeDescription')" />
     </div>
-    <div class="page-section">
+    <div class="page-section" v-if="language === 'en'">
       <h2 class="heading" v-text="$t('HomeView.Stay')" />
       <h3 class="subtitle" v-text="$t('HomeView.Lisbon')" />
         <picture class="image">
@@ -72,7 +72,10 @@
             alt="Lisbon zoom level 1"
           />
         </picture>
-        <p class="places-to-stay-description" v-text="$t('HomeView.LisbonDescription')" />
+        <p
+          class="places-to-stay-description"
+          v-text="$t('HomeView.LisbonDescription')"
+        />
       <h3 class="subtitle" v-text="$t('HomeView.Sintra')" />
         <picture class="image">
           <source
@@ -85,7 +88,10 @@
             alt="Sintra zoom level 1"
           />
         </picture>
-        <p class="places-to-stay-description" v-text="$t('HomeView.SintraDescription')" />
+        <p
+          class="places-to-stay-description"
+          v-text="$t('HomeView.SintraDescription')"
+        />
       <h3 class="subtitle" v-text="$t('HomeView.Cascais')" />
         <picture class="image">
           <source
@@ -98,18 +104,32 @@
             alt="Cascais zoom level 1"
           />
         </picture>
-        <p class="places-to-stay-description" v-text="$t('HomeView.CascaisDescription')" />
-        <p class="places-to-stay-description" v-text="$t('HomeView.CarcavelosDescription')" />
-    </div>
-    <div class="page-section">
-      <h2 class="heading" v-text="$t('HomeView.Transport')" />
-      <h3 class="subtitle" v-text="$t('HomeView.Drive')" />
-      <h3 class="subtitle" v-text="$t('HomeView.Train')" />
-      <h3 class="subtitle" v-text="$t('HomeView.Taxi')" />
+        <p
+          class="places-to-stay-description"
+          v-text="$t('HomeView.CascaisDescription')"
+        />
+        <p
+          class="places-to-stay-description"
+          v-text="$t('HomeView.CarcavelosDescription')"
+        />
     </div>
     <div class="page-section">
       <h2 class="heading" v-text="$t('HomeView.Events')" />
       <ScheduleOfEvents />
+    </div>
+    <div class="page-section">
+      <p
+        class="updates-description"
+        v-text="$t('HomeView.Updates')"
+      />
+    </div>
+    <div class="page-section">
+      <div class="see-you-soon">
+        <span
+          class="subtitle see-you-soon-copy"
+          v-text="$t('HomeView.SeeYouSoon')"
+        />
+      </div>
     </div>
   </div>
 </template>
@@ -151,7 +171,7 @@ export default {
 .home-view {
   display: flex;
   flex-wrap: wrap;
-  max-width: 1000px;
+  max-width: 1200px;
   margin: auto;
   padding: 24px;
 }
@@ -183,10 +203,45 @@ export default {
 .image {
   display: flex;
   align-items: center;
-  flex: 0 1 800px;
+  flex: 0 1 720px;
+  border: 12px solid #f6f6f6;
 }
 
 .image-jpg {
   width: 100%;
+}
+
+.map-description-main {
+  flex: 1 0 100%;
+}
+
+.map-description {
+  background: #f6f6f6;
+  margin: 0 0 24px 0;
+  bottom: 24px;
+  flex: 0 1 720px;
+  padding: 0 12px 12px;
+  text-align: center;
+}
+
+.places-to-stay-description {
+  flex: 0 1 720px;
+}
+
+.updates-description {
+  margin-top: 56px;
+  text-align: center;
+}
+
+.see-you-soon {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  padding: 38px 24px 32px;
+}
+
+.see-you-soon-copy {
+  display: flex;
+  justify-content: center;
 }
 </style>

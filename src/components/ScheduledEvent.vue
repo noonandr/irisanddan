@@ -28,22 +28,34 @@ export default defineComponent({
   color: #3b3b3b;
 }
 
+.time {
+  font-weight: bold;
+  font-size: 14px;
+}
+
 .divider {
   position: relative;
   width: 100%;
-  padding-top: 26px;
-  margin-bottom: 32px;
-  border-bottom: 1px solid #3b3b3b;
+  margin: 28px 0 32px;
+  height: 2px;
+  background: #3b3b3b;
 
   &:after {
     content: "";
     background: #3b3b3b;
-    width: 1px;
-    height: 40px;
+    width: 2px;
+    height: 32px;
     display: flex;
     position: absolute;
-    top: 6px;
+    top: -15px;
     left: 50%;
+    border-radius: 7px;
   }
+}
+
+.event {
+  margin-top: 12px 0 28px;
+  font-family: 'Freebooter Scirpt', serif;
+  font-size: 26px;
 }
 </style>

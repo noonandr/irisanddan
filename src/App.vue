@@ -84,14 +84,14 @@ a {
 }
 
 .heading {
-  font-size: 28px;
+  font-size: 32px;
   text-align: left;
   color: #2c3e50;
   flex: 1 0 100%;
 }
 
 .subtitle {
-  font-size: 22px;
+  font-size: 24px;
   text-align: left;
   color: #2c3e50;
   flex: 1 0 100%;

@@ -1,5 +1,41 @@
 {
   HomeView: {
-    Hello: "Oi!!!"
+    Hello: "Estamos ansiosos de vos ver a todos no nosso casamento no dia 7 de Maio 2023. Aqui podem encontrar alguma informação sobre a localização da quinta e sobre os horários dos eventos no dia. Esperamos que esta informação seja útil mas por favor entrem em contacto se tiverem algumas perguntas.",
+    Venue: "Quinta",
+    VenueName: "Quinta dos Gafanhotos",
+    Address: "Rua Quinta dos Gafanhotos 173, 2775-734 Carcavelos, Portugal",
+    Map: "Mapa",
+    MapDescription: "Quinta dos Gafanhotos está localizada em Carcavelos",
+    MapOneDescription: "Do centro de Lisboa até à quinta são cerca de 30 minutos de carro",
+    MapTwoDescription: "A estação de comboio mais próxima é Carcavelos, com ligações directas a Lisboa (Cais de Sodré) e Cascais. Da estação são aproximadamente 8 minutos de carro",
+    MapThreeDescription: "Há estacionamento para os convidados no parque de estacionamento directamente em frente do portão principal de entrada para a quinta",
+    Events: "Horário dos eventos",
+    Lisbon: "Lisboa",
+    Sintra: "Sintra",
+    Cascais: "Cascais",
+    Updates: "Nós vamos actualizar o site mais perto da data com os últimos detalhes, por isso voltem mais tarde para ver as últimas actualizações.",
+    SeeYouSoon: "Até breve! 🙂"
+  },
+  ScheduleOfEvents: {
+    ArriveTime: "14:30",
+    ArriveCopy: "Chegadas",
+    CeremonyTime: "15:30",
+    CeremonyCopy: "Cerimónia",
+    TapasTime: "16:00",
+    TapasCopy: "Tapas",
+    PhotosTime: "16:00",
+    PhotosCopy: "Fotos",
+    DinnerTime: "17:00",
+    DinnerCopy: "Jantar",
+    ToastsTime: "18:30",
+    ToastsCopy: "Brindes",
+    FirstDanceTime: "18:45",
+    FirstDanceCopy: "1a Dança",
+    PartyTime: "19:00",
+    PartyCopy: "Festa",
+    CakeTime: "20:00",
+    CakeCopy: "Bolo",
+    CarriagesTime: "23:30",
+    CarriagesCopy: "Fim da festa"
   }
 }
