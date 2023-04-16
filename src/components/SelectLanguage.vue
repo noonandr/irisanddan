@@ -35,7 +35,7 @@
             <portugal-flag />
           </IconComponent>
           <span class="hi">
-            Oi!
+            Olá!
           </span>
         </div>
       </span>
@@ -70,7 +70,7 @@ export default defineComponent({
 
 <style scoped lang="scss">
 .select-language {
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   bottom: 0;

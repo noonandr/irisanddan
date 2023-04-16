@@ -9,6 +9,26 @@
       <p class="hello-text" v-text="$t('HomeView.Hello')" />
     </div>
     <div class="page-section">
+      <h2 class="heading" v-text="$t('HomeView.DressCode')" />
+      <p class="gift-list-description" v-text="$t('HomeView.DressCodeDescription')" />
+    </div>
+    <div class="page-section">
+      <h2 class="heading" v-text="$t('HomeView.GiftList')" />
+      <p class="gift-list-description" v-text="$t('HomeView.GiftListDescription')" />
+      <a
+        href="https://www.johnlewis.com/wish-list/KQKDFNJ"
+        class="important gift-list-link"
+        v-text="$t('HomeView.JohnLewis')"
+        target="_blank"
+      />
+      <a
+        href="https://prezola.com/wishlists/10277867/"
+        class="important gift-list-link"
+        v-text="$t('HomeView.Prezola')"
+        target="_blank"
+      />
+    </div>
+    <div class="page-section">
       <h2 class="heading" v-text="$t('HomeView.Venue')" />
       <h3 class="important venue-name" v-text="$t('HomeView.VenueName')" />
       <a
@@ -21,13 +41,24 @@
     <div class="page-section">
       <h2 class="heading" v-text="$t('HomeView.Map')" />
       <p class="important map-description-main" v-text="$t('HomeView.MapDescription')" />
-      <picture class="image">
+      <picture class="image" v-if="language === 'en'">
         <source
-          srcset="@/assets/images/map-zoom-3.webp"
+          srcset="@/assets/images/map-zoom-3-en.webp"
           type="image/webp"
         />
         <img
-          src="@/assets/images/map-zoom-3.jpg"
+          src="@/assets/images/map-zoom-3-en.jpg"
+          class="image-jpg"
+          alt="Map zoom level 3"
+        />
+      </picture>
+      <picture class="image" v-if="language === 'pt'">
+        <source
+          srcset="@/assets/images/map-zoom-3-pt.webp"
+          type="image/webp"
+        />
+        <img
+          src="@/assets/images/map-zoom-3-pt.jpg"
           class="image-jpg"
           alt="Map zoom level 3"
         />
@@ -187,6 +218,14 @@ export default {
   justify-content: center;
   margin: auto;
   text-align: center;
+}
+
+.gift-list-description {
+  flex: 0 1 490px;
+}
+
+.gift-list-link {
+  flex: 1 0 100%;
 }
 
 .venue-name {

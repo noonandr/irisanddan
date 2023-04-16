@@ -1,6 +1,12 @@
 {
   HomeView: {
     Hello: "Estamos ansiosos de vos ver a todos no nosso casamento no dia 7 de Maio 2023. Aqui podem encontrar alguma informação sobre a localização da quinta e sobre os horários dos eventos no dia. Esperamos que esta informação seja útil mas por favor entrem em contacto se tiverem algumas perguntas.",
+    GiftList: "Lista de Presentes",
+    GiftListDescription: "A vossa presença no dia é o mais importante e por isso não esperamos nada mais, mas se de qualquer maneira quiserem contribuir com algo nós criámos uma lista de presentes de casamento. Temos uma pequena lista no John Lewis e outra um pouco maior no Prezola. Links em baixo:",
+    JohnLewis: "John Lewis",
+    Prezola: "Prezola",
+    DressCode: "Dress Code",
+    DressCodeDescription: "O dress code para o dia é smart casual (informal mas elegante). Se quiserem se vestir mais elegante podem mas igualmente podem se vestir des forma que se sintam confortáveis.",
     Venue: "Quinta",
     VenueName: "Quinta dos Gafanhotos",
     Address: "Rua Quinta dos Gafanhotos 173, 2775-734 Carcavelos, Portugal",
@@ -9,7 +15,7 @@
     MapOneDescription: "Do centro de Lisboa até à quinta são cerca de 30 minutos de carro",
     MapTwoDescription: "A estação de comboio mais próxima é Carcavelos, com ligações directas a Lisboa (Cais de Sodré) e Cascais. Da estação são aproximadamente 8 minutos de carro",
     MapThreeDescription: "Há estacionamento para os convidados no parque de estacionamento directamente em frente do portão principal de entrada para a quinta",
-    Events: "Horário dos eventos",
+    Events: "Horário dos Eventos",
     Lisbon: "Lisboa",
     Sintra: "Sintra",
     Cascais: "Cascais",

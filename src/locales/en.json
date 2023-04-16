@@ -1,6 +1,12 @@
 {
   HomeView: {
     Hello: "We are looking forward to seeing all of you at our wedding on the 7th of May 2023. We've put some information together for you about the day, areas to stay, places to visit, as well as how to get there. We hope you find this useful but please get in contact should you need any help or just have some questions that we can answer.",
+    GiftList: "Gift List",
+    GiftListDescription: "Most of you are traveling from far and wide and so we aren't expecting anything other than your presence but if you would like to give us a present we have put together a gift list. We have a list at John Lewis with a few things and a slightly larger list on Prezola. Links below:",
+    JohnLewis: "John Lewis",
+    Prezola: "Prezola",
+    DressCode: "Dress Code",
+    DressCodeDescription: "The dress code for the day is smart casual. If you want to be very smart then please do but feel free to dress in a way that you feel comfortable.",
     Venue: "Venue",
     VenueName: "Quinta dos Gafanhotos",
     Address: "Rua Quinta dos Gafanhotos 173, 2775-734 Carcavelos, Portugal",
@@ -12,13 +18,13 @@
     Stay: "Places to Stay and Transport Options",
     LisbonDescription: "The orange marked area on the map is the central area of Lisbon. You will find plenty of choices to stay, you will have downtown Lisbon and the main attractions. The train station Cais do Sodre (marked in blue), will take you straight to Carcavelos. The journey takes about 30 minutes. Cais do Sodre also has a tube station should want to stay further out of the centre. By car, from central Lisbon should take about 30 minutes.",
     SintraDescription: "Sintra is a very beautiful place to stay, with lots of historical architecture and lush vegetation, characteristic of the area. It can be quite touristy during the day but it will be quiet at night. There are no good public transport links to the venue from here and so if you do stay in Sintra you will need a car or taxi to get to the venue. The journey should take just under 30 minutes.",
-    CascaisDescription: "Cascais is a charming seaside town. Here you will find plenty of accomodation to choose from. There will be lots of nice restaurants to explore and it will still be lively in the evenings. From here you can get a train to Carcavelos, which takes around 15 minutes. If driving or taking a taxi from Cascais to the venue this will take just under 20 minutes. All the area along the coast between Cascais and Carcavelos will also have good accomodation options to choose from.",
-    CarcavelosDescription: "Carcavelos is the closest area to the venue, it is more of a residential area but there are some accomodation options around, should you wish to stay closer to the venue. There is a beach nearby with some restaurants, cafes and also surf schools, should you be up to catching some waves.",
+    CascaisDescription: "Cascais is a charming seaside town. Here you will find plenty of accommodation to choose from. There will be lots of nice restaurants to explore and it will still be lively in the evenings. From here you can get a train to Carcavelos, which takes around 15 minutes. If driving or taking a taxi from Cascais to the venue this will take just under 20 minutes. All the area along the coast between Cascais and Carcavelos will also have good accommodation options to choose from.",
+    CarcavelosDescription: "Carcavelos is the closest area to the venue, it is more of a residential area but there are some accommodation options around, should you wish to stay closer to the venue. There is a beach nearby with some restaurants, cafes and also surf schools, should you be up to catching some waves.",
     Events: "Schedule of Events",
     Lisbon: "Lisbon",
     Sintra: "Sintra",
     Cascais: "Cascais",
-    Updates: "We will udapte the site with more infomration closer to the day. So keep your eyes peeled.",
+    Updates: "We will update the site with more information closer to the day. So keep your eyes peeled.",
     SeeYouSoon: "See you soon! 🙂"
   },
   ScheduleOfEvents: {
