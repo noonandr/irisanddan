@@ -48,5 +48,13 @@
     CakeCopy: "Cake",
     CarriagesTime: "11:30 PM",
     CarriagesCopy: "Carriages"
+  },
+  PaparazziView: {
+    PaparazziGame: "Paparazzi Game",
+    Welcome: "Welcome to the game ",
+    Task1: "Task 1: Take a photo pulling this face"
+  },
+  PhotosView: {
+    Title: "Photos"
   }
 }

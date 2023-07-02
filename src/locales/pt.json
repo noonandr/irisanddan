@@ -43,5 +43,8 @@
     CakeCopy: "Bolo",
     CarriagesTime: "23:30",
     CarriagesCopy: "Fim da festa"
+  },
+  PhotosView: {
+    Title: "Fotos"
   }
 }

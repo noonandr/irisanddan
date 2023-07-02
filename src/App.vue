@@ -1,17 +1,10 @@
-<template>
-  <HomeView/>
-</template>
-
-<script>
-import HomeView from './components/HomeView.vue'
-
-export default {
-  name: 'App',
-  components: {
-    HomeView
-  }
-}
+<script setup>
+import { RouterView } from 'vue-router'
 </script>
+
+<template>
+  <RouterView />
+</template>
 
 <style lang="scss">
 $screen-small: 480px;
@@ -44,6 +37,7 @@ $screen-huge: 1800px;
     background-size: 600px;
     background-repeat: no-repeat;
     background-position: calc(50% - 600px) top;
+    z-index: -1;
   }
 }
 
