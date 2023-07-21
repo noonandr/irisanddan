@@ -6,6 +6,7 @@
       <h1 class="title">Iris & Daniel</h1>
     </div>
     <div class="hi">
+      <router-link :to="{name: 'photos-view'}">Go to Photos</router-link>
       <p class="hello-text" v-text="$t('HomeView.Hello')" />
     </div>
     <div class="page-section">
