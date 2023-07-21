@@ -7,15 +7,11 @@ const router = createRouter({
   routes: [
     {
       path: '/',
-      redirect: { name: 'home-view' }
-    },
-    {
-      path: '/irisanddan/',
       name: 'home-view',
       component: HomeView
     },
     {
-      path: '/irisanddan/photos/',
+      path: '/photos/',
       name: 'photos-view',
       component: PhotosView
     }
