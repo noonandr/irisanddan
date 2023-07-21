@@ -6,8 +6,11 @@
       <h1 class="title">Iris & Daniel</h1>
     </div>
     <div class="hi">
-      <router-link :to="{name: 'photos-view'}">Go to Photos</router-link>
       <p class="hello-text" v-text="$t('HomeView.Hello')" />
+    </div>
+    <div class="page-section">
+      <h2 class="heading" v-text="$t('HomeView.Photos')" />
+        <router-link class="gift-list-description" :to="{name: 'photos-view'}">View Photos</router-link>
     </div>
     <div class="page-section">
       <h2 class="heading" v-text="$t('HomeView.DressCode')" />
