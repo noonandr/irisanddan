@@ -37,6 +37,7 @@
 <script>
 import { ref } from 'vue'
 import { mapGetters } from 'vuex'
+import { saveAs } from 'file-saver'
 
 import SwitchLanguage from '@/components/SwitchLanguage.vue'
 import PhotoSelector from '@/components/PhotoSelector.vue'
@@ -88,14 +89,15 @@ export default {
     }
   },
   methods: {
-    download () {
+    async download () {
       for (const photo of this.selectedPhotos) {
-        const URL = '/photos/' + photo + '.jpg'
-        const link = document.createElement('a')
-        link.href = URL
-        link.setAttribute('download', photo + '.jpg')
-        document.body.appendChild(link)
-        link.click()
+        const URL = 'https://s3.eu-west-2.amazonaws.com/uploads.irisanddan.com/' + photo + '.jpg'
+        fetch(URL)
+          .then((response) => response.blob())
+          .then((blob) => {
+            saveAs(blob, photo + '.jpg')
+          })
+        console.log('downloading', URL)
       }
       this.resetPhotoSelected()
     }
