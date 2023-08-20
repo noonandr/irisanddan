@@ -5,6 +5,17 @@
       class="title photos-title"
       v-text="$t('PhotosView.Title')"
     />
+    <div class="page-section">
+      <p class="photos-hello" v-text="$t('PhotosView.HelloEverybody')" />
+      <p class="photos-description" v-text="$t('PhotosView.PhotosDescription')" />
+      <p class="photos-warning" v-text="$t('PhotosView.PhotosWarning')" />
+      <i18n-t class="paragraph photos-old-home-view" keypath="PhotosView.PhotosOldHomeView" tag="label" scope="global">
+        <router-link :to="{ name: 'home-view' }" v-text="$t('PhotosView.homeView')" />
+      </i18n-t>
+      <p class="photos-final" v-text="$t('PhotosView.Final')" />
+      <p class="photos-lots-of-love" v-text="$t('PhotosView.LotsOfLove')" />
+      <p class="iris-and-daniel" v-text="$t('PhotosView.IrisAndDaniel')" />
+    </div>
     <div class="photo-list">
       <PhotoSelector
         v-for="(photo, index) in photos"
@@ -15,9 +26,10 @@
       />
     </div>
     <div class="photo-footer">
-      <span class="photo-footer-total-title">
-        Photos selected:
-      </span>
+      <span
+        class="photo-footer-total-title"
+        v-text="$t('PhotosView.PhotosSelected')"
+      />
       <span class="photo-footer-total" v-text="selectedPhotos.length" />
       <div class="photo-footer-ids">
         <span
@@ -27,9 +39,11 @@
           v-text="'#' + photo"
         />
       </div>
-      <AppButton @click="download" class="button-download-photos">
-        Download
-      </AppButton>
+      <AppButton
+        @click="download"
+        class="button-download-photos"
+        v-text="$t('PhotosView.Download')"
+      />
     </div>
   </div>
 </template>
@@ -91,15 +105,23 @@ export default {
   methods: {
     async download () {
       for (const photo of this.selectedPhotos) {
-        const URL = 'https://s3.eu-west-2.amazonaws.com/uploads.irisanddan.com/' + photo + '.jpg'
-        fetch(URL)
-          .then((response) => response.blob())
-          .then((blob) => {
-            saveAs(blob, photo + '.jpg')
-          })
-        console.log('downloading', URL)
+        await this.$_downloadImage(photo)
       }
       this.resetPhotoSelected()
+    },
+    async $_downloadImage (photo) {
+      const URL = 'https://s3.eu-west-2.amazonaws.com/uploads.irisanddan.com/' + photo + '.jpg'
+      fetch(URL)
+        .then((response) => response.blob())
+        .then((blob) => {
+          saveAs(blob, photo + '.jpg')
+        })
+      await this.$_delayDownload(photo)
+    },
+    $_delayDownload (photo) {
+      return new Promise((resolve, reject) => {
+        setTimeout(resolve, 500)
+      })
     }
   },
   watch: {
@@ -127,11 +149,34 @@ export default {
   justify-content: center;
 }
 
+.page-section {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1 0 100%;
+  justify-content: center;
+}
+
+.photos-hello,
+.photos-description,
+.photos-warning,
+.photos-old-home-view,
+.photos-final,
+.photos-lots-of-love {
+  flex: 0 1 620px;
+  margin: 18px 0 0;
+}
+
+.iris-and-daniel {
+  flex: 0 1 620px;
+  margin-bottom: 42px;
+}
+
 .photo-list {
   display: flex;
   flex: 1 0 100%;
   flex-wrap: wrap;
   justify-content: center;
+  margin-bottom: 52px;
 }
 
 @media screen and (min-width: 608px) {

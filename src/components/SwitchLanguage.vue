@@ -7,7 +7,7 @@
       class="switch"
     >
       <IconComponent
-        class="icon-svg uk-flag"
+        class="icon-svg flag uk-flag"
         :class="{active: language === 'en'}"
         icon-name="uk-flag"
         width="42"
@@ -17,7 +17,7 @@
         <uk-flag />
       </IconComponent>
       <IconComponent
-        class="icon-svg portugal-flag"
+        class="icon-svg flag portugal-flag"
         :class="{active: language === 'pt'}"
         icon-name="portugal-flag"
         width="34"
@@ -64,7 +64,9 @@ export default defineComponent({
   padding-top: 36px;
 }
 
-.switch {}
+.flag {
+  cursor: pointer;
+}
 
 .icon-svg {
   padding: 3px 4px;
@@ -72,5 +74,6 @@ export default defineComponent({
 
 .active {
   background: #8BB2A1;
+  cursor: default;
 }
 </style>

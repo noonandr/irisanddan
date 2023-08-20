@@ -13,7 +13,7 @@
       >
         <div class="language-box eng" v-if="locale === 'en'">
           <IconComponent
-            class="icon-svg uk-flag"
+            class="icon-svg flag uk-flag"
             icon-name="uk-flag"
             width="84"
             viewBox="0 0 60 30"
@@ -26,7 +26,7 @@
         </div>
         <div class="language-box port" v-if="locale === 'pt'">
           <IconComponent
-            class="icon-svg portugal-flag"
+            class="icon-svg flag portugal-flag"
             icon-name="portugal-flag"
             width="63"
             viewBox="0 0 600 400"
@@ -117,6 +117,10 @@ export default defineComponent({
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+.flag {
+  cursor: pointer;
 }
 
 .icon-svg {

@@ -55,7 +55,7 @@ body {
 }
 
 a {
-  text-decoration: none;
+  text-decoration: underline;
   color: inherit;
 
   &:hover {

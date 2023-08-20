@@ -45,6 +45,16 @@
     CarriagesCopy: "Fim da festa"
   },
   PhotosView: {
-    Title: "Fotos"
+    Title: "Fotos",
+    PhotosSelected: "Fotos selecionadas",
+    Download: "Download",
+    HelloEverybody: "Olá a todos.",
+    PhotosDescription: "Nós gostariamos muito de vos agradecer pela vossa presença no nosso casamento. Nós tivemos um dia maravilhoso e especial, tornado ainda mais especial pela vossa presença. Esperamos que tenham passado um belo dia e como memória do dia aqui estão as fotos profissionais do casamento. Podem fazer o download como desejarem.",
+    PhotosWarning: "Para fazer o download de várias fotos, basta clicar uma vez em cada foto e fazer o 'Download'. Se não conseguirem fazer o download de várias fotos de uma vez poderão ser solicitados pelo browser para permitir o download. Por favor carreguem em 'Permitir'.",
+    PhotosOldHomeView: "A página antiga ainda está acessivél {0}.",
+    homeView: 'aqui',
+    Final: 'Mais uma vez, obrigada por terem vindo e esperamos vos ver em breve.',
+    LotsOfLove: 'Com muito amor e carinho,',
+    IrisAndDaniel: 'Iris ♡ Daniel'
   }
 }

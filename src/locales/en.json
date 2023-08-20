@@ -55,6 +55,16 @@
     Task1: "Task 1: Take a photo pulling this face"
   },
   PhotosView: {
-    Title: "Photos"
+    Title: "Photos",
+    PhotosSelected: "Photos selected",
+    Download: "Download",
+    HelloEverybody: "Hello everybody.",
+    PhotosDescription: "We would really like to thank you for joining us at our wedding. We had the most wonderful and special day, made all the more special by your presence. We hope you had a lovely time and as a memory of the day here are the professional wedding photos. You can download them as you wish.",
+    PhotosWarning: "To download multiple photos, you only need to click on each photo once and then click 'Download'. If you are not able to download multiple photos at once you may be prompted by your browsers to allow the download of multiple files. Please click 'Allow'.",
+    PhotosOldHomeView: "The old web page is still accessible {0}.",
+    homeView: 'here',
+    Final: 'Once again, thank you for joining us and we hope to see each of you again very soon.',
+    LotsOfLove: 'Lots of Love,',
+    IrisAndDaniel: 'Iris ♡ Daniel'
   }
 }
